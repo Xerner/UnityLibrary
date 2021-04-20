@@ -10,7 +10,7 @@ public abstract class PoolablePrefab : MonoBehaviour
 
     public string GetPrefabAddress(int modelVariantIndex)
     {
-        if (modelVariantIndex.IsBetween(0, ModelVariantCount-1))
+        if (modelVariantIndex > 0 && modelVariantIndex < ModelVariantCount))
         {
             return LookupPrefabAddress(modelVariantIndex);
         }
